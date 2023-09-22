@@ -6,12 +6,12 @@ plugins {
 
 android {
     namespace = "com.vixiloc.ekasir"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.vixiloc.ekasir"
         minSdk = 24
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -68,4 +68,9 @@ dependencies {
     androidTestImplementation(libs.ui.test.junit4)
     debugImplementation(libs.ui.tooling)
     debugImplementation(libs.ui.test.manifest)
+
+    implementation(libs.converter.gson)
+    implementation(libs.retrofit)
+    implementation(libs.koin.androidx.compose)
+    implementation(libs.androidx.navigation.compose)
 }
